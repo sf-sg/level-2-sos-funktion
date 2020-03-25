@@ -1,1 +1,239 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="9.Dc|6I=G78L:QCe?NV5">Pause_Punkt</variable><variable id="]6O5H$wt%t~sFN90aOIg">Pause_Strich</variable><variable id=")H/DU^S8LF[!Ahetg9M}">Zeichenende</variable></variables><block type="pxt-on-start" id="3s==^2DGAK@y!pkI:b?k" x="0" y="1"><statement name="HANDLER"><block type="variables_set" id="ld0BC2SP!=p(Ye#f`JJO"><field name="VAR" id="9.Dc|6I=G78L:QCe?NV5">Pause_Punkt</field><value name="VALUE"><shadow type="math_number" id="YqgZi;n,,OK/;{lBuy%-"><field name="NUM">200</field></shadow></value><next><block type="variables_set" id="?lWAye3/%E]y?[9who=p"><field name="VAR" id="]6O5H$wt%t~sFN90aOIg">Pause_Strich</field><value name="VALUE"><shadow type="math_number" id="2|)^oeYG%Yqa3blR@~`C"><field name="NUM">600</field></shadow></value><next><block type="variables_set" id="}Hh9Vtot)A.}Tc-,fu]M"><field name="VAR" id=")H/DU^S8LF[!Ahetg9M}">Zeichenende</field><value name="VALUE"><shadow type="math_number" id=":=bkE~eRdxssp(tI_xk4"><field name="NUM">800</field></shadow></value></block></next></block></next></block></statement></block><block type="device_forever" id="1P2HV-K:=P,4vFGrHNo-" x="390" y="0"><statement name="HANDLER"><block type="function_call" id="KYHa?soI1e$]CdU~bEC)"><mutation name="S" functionid="gW5.M@Sd:D0uc=^_{{]%"/><next><block type="function_call" id="}o?SZ@^Xep9sIi6K53p4"><mutation name="O" functionid="gW5.M@Sd:D0uc=^_{{]%"/><next><block type="function_call" id="MBWAoZ;i/,O`+!gKRwUb"><mutation name="S" functionid="gW5.M@Sd:D0uc=^_{{]%"/><next><block type="device_pause" id="GkoUVW?#Ak-AI0|=4q(h"><value name="pause"><shadow type="timePicker"><field name="ms">500</field></shadow><block type="variables_get" id="DXmqJWiT/{pa%d2?D-U6"><field name="VAR" id=")H/DU^S8LF[!Ahetg9M}">Zeichenende</field></block></value></block></next></block></next></block></next></block></statement></block><block type="function_definition" id="BikH/6:bl0lln.IBJ]8|" x="749" y="6"><mutation name="S" functionid="gW5.M@Sd:D0uc=^_{{]%"/><field name="function_name">S</field><statement name="STACK"><block type="controls_repeat_ext" id="qN4(X`Cg7X:`a^;Mqq|?"><value name="TIMES"><shadow type="math_whole_number" id="zX1;+O5bst05%ZBpvQa+"><field name="NUM">3</field></shadow></value><statement name="DO"><block type="function_call" id="2Sg!4NCp@:(EaO{i34L)"><mutation name="kurz" functionid="qk46}L_Zc{c+(mS%[{3a"/></block></statement><next><block type="device_pause" id="?Nir(R32^ASqBL}JMH0M"><value name="pause"><shadow type="timePicker"><field name="ms">500</field></shadow><block type="variables_get" id="(o[cAmw}Mh5R;bmU8b_l"><field name="VAR" id=")H/DU^S8LF[!Ahetg9M}">Zeichenende</field></block></value></block></next></block></statement></block><block type="function_definition" id="j^zWqh753Mqw{6SonEQb" x="1229" y="7"><mutation name="O" functionid="gW5.M@Sd:D0uc=^_{{]%"/><field name="function_name">O</field><statement name="STACK"><block type="function_call" id="~B|WvFj=FyF11k=-oH;5"><mutation name="lang" functionid="qk46}L_Zc{c+(mS%[{3a"/><next><block type="function_call" id="Ew{|+Twf~Gs5gm=NEdnI"><mutation name="lang" functionid="qk46}L_Zc{c+(mS%[{3a"/><next><block type="function_call" id="ZXpR8-|^lB~]:m.eUXPT"><mutation name="lang" functionid="qk46}L_Zc{c+(mS%[{3a"/><next><block type="device_pause" id="P.R=t%6hS]^KKpJO8yrt"><value name="pause"><shadow type="timePicker"><field name="ms">500</field></shadow><block type="variables_get" id="8avJ{M}@]^G83Zum41C$"><field name="VAR" id=")H/DU^S8LF[!Ahetg9M}">Zeichenende</field></block></value></block></next></block></next></block></next></block></statement></block><block type="function_definition" id="v?5K7$p;qqRFR_rot5o|" x="752" y="306"><mutation name="kurz" functionid="qk46}L_Zc{c+(mS%[{3a"/><field name="function_name">kurz</field><statement name="STACK"><block type="device_set_digital_pin" id="|V69iup-#gp4`9WTpBzX"><field name="name">DigitalPin.P0</field><value name="value"><shadow type="math_number_minmax" id="~nF/zb!jWBJUsQ3:@[:h"><mutation min="0" max="1" label="Value" precision="0"/><field name="SLIDER">1</field></shadow></value><next><block type="device_pause" id="QXX3k_F0r+LW7SdUb_z@"><value name="pause"><shadow type="timePicker"><field name="ms">500</field></shadow><block type="variables_get" id="eV!K$Xe:|ZPmHF^8F{z{"><field name="VAR" id="9.Dc|6I=G78L:QCe?NV5">Pause_Punkt</field></block></value><next><block type="device_set_digital_pin" id="|nXe2;l:MV^!JoWKQ7#)"><field name="name">DigitalPin.P0</field><value name="value"><shadow type="math_number_minmax" id="uQw%)=cEU/lX/l#G,`(R"><mutation min="0" max="1" label="Value" precision="0"/><field name="SLIDER">0</field></shadow></value><next><block type="device_pause" id="nN%4TaD8Wtn2fJrF/xto"><value name="pause"><shadow type="timePicker"><field name="ms">500</field></shadow><block type="variables_get" id="MZ`!3X@L0tY`x7H,O[F+"><field name="VAR" id="9.Dc|6I=G78L:QCe?NV5">Pause_Punkt</field></block></value></block></next></block></next></block></next></block></statement></block><block type="function_definition" id="(PNAU_DEmLo3O^1Sc=HW" x="1225" y="311"><mutation name="lang" functionid="qk46}L_Zc{c+(mS%[{3a"/><field name="function_name">lang</field><statement name="STACK"><block type="device_set_digital_pin" id="L9.XQ:-{ZZ?u;pk!wRbT"><field name="name">DigitalPin.P0</field><value name="value"><shadow type="math_number_minmax" id="-jG3ReflUz?w^?F#@q7%"><mutation min="0" max="1" label="Value" precision="0"/><field name="SLIDER">1</field></shadow></value><next><block type="device_pause" id="LSFC~Y0l*dCWnm3`NkS."><value name="pause"><shadow type="timePicker"><field name="ms">500</field></shadow><block type="variables_get" id="z6K$AAi_INCR?#+SHr2x"><field name="VAR" id="]6O5H$wt%t~sFN90aOIg">Pause_Strich</field></block></value><next><block type="device_set_digital_pin" id="YI6Wr%,E85c9%PO_[okz"><field name="name">DigitalPin.P0</field><value name="value"><shadow type="math_number_minmax" id="]nf::%LRn1a91f/bVp6o"><mutation min="0" max="1" label="Value" precision="0"/><field name="SLIDER">0</field></shadow></value><next><block type="device_pause" id="oIcU}yVO(:8kDB;T/LLW"><value name="pause"><shadow type="timePicker"><field name="ms">500</field></shadow><block type="variables_get" id="m!IoP#PT#aoxvEo)1.q`"><field name="VAR" id="9.Dc|6I=G78L:QCe?NV5">Pause_Punkt</field></block></value></block></next></block></next></block></next></block></statement></block></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="c:(X^8g~YQ7^fv7o);mm">Zeichenende</variable>
+    <variable type="" id="yu^pou|{d6^1%?_T.DR1">Pause_Punkt</variable>
+    <variable type="" id="ymbd:c5+tlhgFLT_a0zc">Pause_Strich</variable>
+  </variables>
+  <block type="pxt-on-start" x="0" y="0">
+    <statement name="HANDLER">
+      <block type="variables_set">
+        <field name="VAR" id="yu^pou|{d6^1%?_T.DR1" variabletype="">Pause_Punkt</field>
+        <value name="VALUE">
+          <shadow type="math_number">
+            <field name="NUM">200</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="variables_set">
+            <field name="VAR" id="ymbd:c5+tlhgFLT_a0zc" variabletype="">Pause_Strich</field>
+            <value name="VALUE">
+              <shadow type="math_number">
+                <field name="NUM">600</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="variables_set">
+                <field name="VAR" id="c:(X^8g~YQ7^fv7o);mm" variabletype="">Zeichenende</field>
+                <value name="VALUE">
+                  <shadow type="math_number">
+                    <field name="NUM">800</field>
+                  </shadow>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="function_definition" x="360" y="16">
+    <mutation name="O" functionid="@tUtflqdMC#42Nv?hq/}"></mutation>
+    <field name="function_title">function</field>
+    <field name="function_name">O</field>
+    <statement name="STACK">
+      <block type="function_call">
+        <mutation name="lang" functionid="j`j~j;6RD)I?^23N~,tH"></mutation>
+        <field name="function_title">call</field>
+        <field name="function_name">lang</field>
+        <next>
+          <block type="function_call">
+            <mutation name="lang" functionid="j`j~j;6RD)I?^23N~,tH"></mutation>
+            <field name="function_title">call</field>
+            <field name="function_name">lang</field>
+            <next>
+              <block type="function_call">
+                <mutation name="lang" functionid="j`j~j;6RD)I?^23N~,tH"></mutation>
+                <field name="function_title">call</field>
+                <field name="function_name">lang</field>
+                <next>
+                  <block type="device_pause">
+                    <value name="pause">
+                      <shadow type="timePicker"></shadow>
+                      <block type="variables_get">
+                        <field name="VAR" id="c:(X^8g~YQ7^fv7o);mm" variabletype="">Zeichenende</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="function_definition" x="697" y="16">
+    <mutation name="S" functionid="*.e#QrQj*U6C+h_SeRQR"></mutation>
+    <field name="function_title">function</field>
+    <field name="function_name">S</field>
+    <statement name="STACK">
+      <block type="controls_repeat_ext">
+        <value name="TIMES">
+          <shadow type="math_whole_number">
+            <field name="NUM">3</field>
+          </shadow>
+        </value>
+        <statement name="DO">
+          <block type="function_call">
+            <mutation name="kurz" functionid="mXHoayb#[`;j?(%{p=]q"></mutation>
+            <field name="function_title">call</field>
+            <field name="function_name">kurz</field>
+          </block>
+        </statement>
+        <next>
+          <block type="device_pause">
+            <value name="pause">
+              <shadow type="timePicker"></shadow>
+              <block type="variables_get">
+                <field name="VAR" id="c:(X^8g~YQ7^fv7o);mm" variabletype="">Zeichenende</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="function_definition" x="1033" y="16">
+    <mutation name="kurz" functionid="mXHoayb#[`;j?(%{p=]q"></mutation>
+    <field name="function_title">function</field>
+    <field name="function_name">kurz</field>
+    <statement name="STACK">
+      <block type="device_set_digital_pin">
+        <field name="name">DigitalPin.P0</field>
+        <value name="value">
+          <shadow type="math_number_minmax">
+            <mutation min="0" max="1" label="Number"></mutation>
+            <field name="SLIDER">1</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="device_pause">
+            <value name="pause">
+              <shadow type="timePicker"></shadow>
+              <block type="variables_get">
+                <field name="VAR" id="yu^pou|{d6^1%?_T.DR1" variabletype="">Pause_Punkt</field>
+              </block>
+            </value>
+            <next>
+              <block type="device_set_digital_pin">
+                <field name="name">DigitalPin.P0</field>
+                <value name="value">
+                  <shadow type="math_number_minmax">
+                    <mutation min="0" max="1" label="Number"></mutation>
+                    <field name="SLIDER">0</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="device_pause">
+                    <value name="pause">
+                      <shadow type="timePicker"></shadow>
+                      <block type="variables_get">
+                        <field name="VAR" id="yu^pou|{d6^1%?_T.DR1" variabletype="">Pause_Punkt</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="function_definition" x="0" y="333">
+    <mutation name="lang" functionid="j`j~j;6RD)I?^23N~,tH"></mutation>
+    <field name="function_title">function</field>
+    <field name="function_name">lang</field>
+    <statement name="STACK">
+      <block type="device_set_digital_pin">
+        <field name="name">DigitalPin.P0</field>
+        <value name="value">
+          <shadow type="math_number_minmax">
+            <mutation min="0" max="1" label="Number"></mutation>
+            <field name="SLIDER">1</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="device_pause">
+            <value name="pause">
+              <shadow type="timePicker"></shadow>
+              <block type="variables_get">
+                <field name="VAR" id="ymbd:c5+tlhgFLT_a0zc" variabletype="">Pause_Strich</field>
+              </block>
+            </value>
+            <next>
+              <block type="device_set_digital_pin">
+                <field name="name">DigitalPin.P0</field>
+                <value name="value">
+                  <shadow type="math_number_minmax">
+                    <mutation min="0" max="1" label="Number"></mutation>
+                    <field name="SLIDER">0</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="device_pause">
+                    <value name="pause">
+                      <shadow type="timePicker"></shadow>
+                      <block type="variables_get">
+                        <field name="VAR" id="yu^pou|{d6^1%?_T.DR1" variabletype="">Pause_Punkt</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="device_forever" x="383" y="317">
+    <statement name="HANDLER">
+      <block type="function_call">
+        <mutation name="S" functionid="*.e#QrQj*U6C+h_SeRQR"></mutation>
+        <field name="function_title">call</field>
+        <field name="function_name">S</field>
+        <next>
+          <block type="function_call">
+            <mutation name="O" functionid="@tUtflqdMC#42Nv?hq/}"></mutation>
+            <field name="function_title">call</field>
+            <field name="function_name">O</field>
+            <next>
+              <block type="function_call">
+                <mutation name="S" functionid="*.e#QrQj*U6C+h_SeRQR"></mutation>
+                <field name="function_title">call</field>
+                <field name="function_name">S</field>
+                <next>
+                  <block type="device_pause">
+                    <value name="pause">
+                      <shadow type="timePicker" id="u4l4%tfz+[qND%;4^Opt">
+                        <field name="ms">500</field>
+                      </shadow>
+                      <block type="math_op3">
+                        <value name="x">
+                          <shadow type="math_number">
+                            <field name="NUM">400</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>

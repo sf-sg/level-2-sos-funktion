@@ -32,5 +32,5 @@ basic.forever(function () {
     S()
     O()
     S()
-    basic.pause(Zeichenende)
+    basic.pause(Math.abs(400))
 })
