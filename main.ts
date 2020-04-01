@@ -25,10 +25,11 @@ function lang () {
 let Zeichenende = 0
 let Pause_Strich = 0
 let Pause_Punkt = 0
+let test = 0
 Pause_Punkt = 200
 Pause_Strich = 600
 Zeichenende = 800
-let test = 0
+let test2 = 0
 basic.forever(function () {
     S()
     O()
