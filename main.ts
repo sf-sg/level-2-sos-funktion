@@ -25,7 +25,7 @@ function lang () {
 let Zeichenende = 0
 let Pause_Strich = 0
 let Pause_Punkt = 0
-let test = 10
+let test = 30
 Pause_Punkt = 200
 Pause_Strich = 600
 Zeichenende = 800
