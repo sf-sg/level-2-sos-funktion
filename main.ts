@@ -28,6 +28,7 @@ let Pause_Punkt = 0
 Pause_Punkt = 200
 Pause_Strich = 600
 Zeichenende = 800
+let test = 0
 basic.forever(function () {
     S()
     O()
